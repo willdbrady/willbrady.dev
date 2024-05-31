@@ -44,6 +44,7 @@
         <a class="nava"><img src="./assets/topicon.svg" alt="" class="nav-logo"></a>
         <ul class="navul">
           <li class="navli desktop-li" id="home-li"><a href="#home">Home</a></li>
+          <li class="navli desktop-li"><a href="#skills">Skills</a></li>
           <li class="navli desktop-li"><a href="#about">About</a></li>
           <li class="navli desktop-li"><a href="#projects">Projects</a></li>
           <li class="navli desktop-li"><a href="#contact">Contact</a></li>
@@ -62,13 +63,14 @@
       <div class="mobile-slide" id="slide">
         <ul class="navul">
           <li class="navli"><a href="#home">Home</a></li>
+          <li class="navli"><a href="#skills">Skills</a></li>
           <li class="navli"><a href="#about">About</a></li>
           <li class="navli"><a href="#projects">Projects</a></li>
           <li class="navli"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
-    <section class="main">
+    <section id="home" class="main">
       <ul class="shapesul" id="shape">
         <li class="shapesli"></li>
         <li class="shapesli"></li>
@@ -80,10 +82,10 @@
         <li class="shapesli"></li>
       </ul>
       <div class="main-text">
-        <p class="small-htext">Hi, I'm Will,</p>
-        <p class="big-htext">I'm a <span class="special-text">Full Stack</span> <br> Web Developer.</p>
-        <p class="smaller-htext">I'm a responsive full-stack developer with a passion for developing modern websites.
-        </p>
+        <h1 class="small-htext">Hi, I'm Will,</h1>
+        <h1 class="big-htext">I'm a <span class="special-text">Full Stack</span> <br> Web Developer.</h1>
+        <h2 class="smaller-htext">I'm a responsive full-stack developer with a passion for developing modern websites.
+        </h2>
 
         <div class="hero-btns">
           <a class="hire-me-btn" href="#contact">HIRE ME</a>
@@ -95,7 +97,7 @@
         <img class="hexagon" src="./assets/hexagon.svg" alt="">
       </div>
     </section>
-    <section class="skill-section">
+    <section id="skills" class="skill-section">
       <div class="skills-wrapper">
         <h1 class="skills-header"> Skills & Technology </h1>
         <h2 class="skills-subheader">Languages, Libraries, Frameworks, & Tools</h2>
@@ -173,9 +175,28 @@
         </div>
       </div>
     </section>
-  </div>
-  </section>
-  </div>
+    <section id="about" class="about-section">
+
+    </section>
+    <section id="projects" class="projects-section">
+
+    </section>
+    <section id="contact" class="contact-section">
+      <h1>Contact Me</h1>
+      <h2>Let's <span class="text"></span><br>together.</h2>
+      <a href="">EMAIL ME</a><a href="">Linkedin</a>
+      <h2>If you were to hire me right now, where would you best utilize my skillset?</h2>
+      <form action="" method="post">
+        <input name="userName" placeholder="Your Name" type="text">
+        <input name="userEmail" type="email" placeholder="Your Email">
+        <textarea name="userMessage" id="" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+      </form>
+    </section>
+    <footer>
+      <div>Developed by William Brady</div>
+      <div>2024 © William Brady</div>
+      <div>All Rights Reserved</div>
+    </footer>
   </div>
   <script src="script.js">
   </script>

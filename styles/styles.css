@@ -1,11 +1,13 @@
 html {
   scroll-behavior: smooth;
+  font-family: Montserrat;
 }
 
 body {
   padding: 0px;
   margin: 0px;
   background-color: #0a0a0a;
+  color: white;
   overflow: hidden;
 }
 
@@ -98,7 +100,6 @@ nav {
   list-style: none;
   color: white;
   font-size: 1.5rem;
-  font-family: Montserrat;
 }
 
 .navli {
@@ -111,53 +112,6 @@ nav {
   padding-left: 0px;
 }
 
-@media screen and (max-width: 680px) {
-  .desktop-li {
-    display: none;
-  }
-
-  .mobile-menu-li,
-  .mobile-menu-img,
-  .mobile-menu-a {
-    display: inline-block;
-  }
-
-  ul {
-    padding-left: 0px;
-  }
-
-  .main {
-    flex-direction: column-reverse;
-    gap: 0px;
-  }
-
-  nav {
-    margin-bottom: 0px;
-  }
-
-  .main-image,
-  .main-text {
-    scale: 50%;
-    padding: 0px;
-    text-align: center;
-    margin: -40%;
-  }
-
-}
-
-@media screen and (min-width: 682px) {
-
-  .mobile-menu-li,
-  .mobile-menu-img,
-  .mobile-menu-a {
-    display: none;
-  }
-
-
-  .desktop-li {
-    display: inline;
-  }
-}
 
 .nav-wrapper {
   background-color: #0a0a0a;
@@ -565,7 +519,6 @@ ul#shape li:nth-child(8):after {
 }
 
 .main-text {
-  font-family: Montserrat;
   color: white;
   z-index: 5;
 }
@@ -581,6 +534,7 @@ ul#shape li:nth-child(8):after {
 .smaller-htext {
   font-size: 2rem;
   margin: none;
+  font-weight: normal;
   margin-bottom: 2rem;
   margin-top: .5rem;
   z-index: 5;
@@ -589,6 +543,7 @@ ul#shape li:nth-child(8):after {
 .small-htext {
   font-size: 3rem;
   margin: 0px;
+  font-weight: normal;
   z-index: 5;
 }
 
@@ -637,7 +592,6 @@ ul#shape li:nth-child(8):after {
 .skills-header {
   font-size: 3rem;
   font-weight: bold;
-  font-family: Montserrat;
   color: white;
 }
 
@@ -649,15 +603,14 @@ ul#shape li:nth-child(8):after {
 }
 
 .skills-header {
-  font-family: Montserrat;
   font-size: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  margin-top: 70px;
   color: white;
 }
 
 .skills-subheader {
-  font-family: Montserrat;
   font-size: 1.5rem;
   font-weight: normal;
   color: white;
@@ -696,7 +649,6 @@ ul#shape li:nth-child(8):after {
 
 .skill-card {
   height: 10rem;
-  font-family: Montserrat;
   font-size: 1rem;
   font-weight: bold;
   color: white;
@@ -706,4 +658,191 @@ ul#shape li:nth-child(8):after {
 
 .label {
   text-decoration: underline;
+}
+
+/* CONTACT SECTION BELOW */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section form input {}
+
+/* FOOTER BELOW */
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  background-color: #d45252;
+}
+
+footer div {
+  padding: 16px;
+}
+
+footer div:nth-child(1),
+footer div:nth-child(2) {
+  border-right: solid white 1px;
+}
+
+/* MEDIA QUERIES BELOW */
+
+@media screen and (max-width: 1312px) {
+  .main {
+    column-gap: 0px;
+    width: auto;
+  }
+
+  .main-image,
+  .hexagon {
+    width: 540px;
+  }
+
+  .will {
+    scale: 100%;
+    width: 545px;
+    translate: -7px 88px;
+  }
+
+}
+
+@media screen and (max-width: 1216px) {
+  .hire-me-btn {
+    box-sizing: border-box;
+    width: 171px;
+  }
+
+  .portfolio-btn {
+    margin-top: 22px;
+    margin-left: 0px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    width: 279px;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1164px) {
+  .small-htext {
+    font-size: 2rem;
+  }
+
+  .big-htext {
+    font-size: 3rem;
+  }
+
+  .smaller-htext {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 813px) {
+  .desktop-li {
+    display: none;
+  }
+
+  .hexagon {
+    width: 40vw;
+  }
+
+  .will {
+    width: 40vw;
+    translate: 0px 200px;
+  }
+
+  .main-image {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .mobile-menu-li,
+  .mobile-menu-img,
+  .mobile-menu-a {
+    display: inline-block;
+  }
+
+  .navwrapper ul {
+    padding-left: 0px;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-btns {
+    width: 280px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav {
+    margin-bottom: 0px;
+  }
+
+}
+
+@media screen and (min-width: 814px) {
+
+  .mobile-menu-li,
+  .mobile-menu-img,
+  .mobile-menu-a {
+    display: none;
+  }
+
+
+  .desktop-li {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 518px) {
+
+  footer div:nth-child(1),
+  footer div:nth-child(2) {
+    border-right: none;
+  }
+
+  footer {
+    padding: 0px;
+  }
+
+  footer div {
+    padding: 4px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
 }
