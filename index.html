@@ -1,205 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Will Brady</title>
+    <link rel="icon" href="./assets/topicon.svg" type="svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Will Brady</title>
-  <link rel="icon" href="./assets/topicon.svg" type="svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&amp;display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <div class="loading-page" id="loading-page">
-    <div class="container">
-      <svg class="loading-logo" id="loading" version="1.0" xmlns="http://www.w3.org/2000/svg" width="579.000000pt"
-        height="552.000000pt" viewBox="0 0 579.000000 552.000000" preserveAspectRatio="xMidYMid meet">
-        <g transform="translate(0.000000,552.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-          <path d="M1547 4956 l-78 -145 1031 -1905 c567 -1048 1033 -1913 1036 -1921 6
+  <body>
+    <div class="loading-page" id="loading-page">
+      <div class="container">
+        <svg
+          class="loading-logo"
+          id="loading"
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="579.000000pt"
+          height="552.000000pt"
+          viewBox="0 0 579.000000 552.000000"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g
+            transform="translate(0.000000,552.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+            <path
+              d="M1547 4956 l-78 -145 1031 -1905 c567 -1048 1033 -1913 1036 -1921 6
      -14 -22 -15 -246 -13 l-252 3 -824 1525 c-454 839 -832 1535 -840 1548 -14 22
      -18 22 -162 20 l-147 -3 -78 -144 -77 -143 736 -1362 c405 -748 747 -1380 760
      -1403 l25 -43 -254 0 -254 0 -556 1028 -555 1027 -154 3 -153 2 -23 -42 c-13
      -24 -48 -88 -77 -143 l-54 -100 633 -1170 633 -1170 1275 -3 1275 -2 72 133
      c39 73 71 139 71 146 0 7 -537 1005 -1192 2217 l-1193 2204 -150 0 -150 0 -78
-     -144z" />
-          <path d="M2686 4939 c-42 -77 -76 -142 -76 -144 0 -2 85 -160 189 -352 103
+     -144z"
+            />
+            <path
+              d="M2686 4939 c-42 -77 -76 -142 -76 -144 0 -2 85 -160 189 -352 103
      -191 547 -1012 986 -1823 438 -811 801 -1479 805 -1483 6 -7 853 1545 862
      1580 2 7 -94 192 -212 412 l-215 400 -404 1 c-351 0 -402 2 -397 15 3 8 91
      173 197 367 105 194 192 358 192 364 0 6 -96 190 -214 408 l-214 396 -712 0
      -711 0 -76 -141z m1252 -534 c34 -63 62 -120 62 -127 0 -7 -56 -115 -124 -240
      l-123 -227 -163 302 c-90 166 -177 326 -193 355 l-29 52 254 0 253 0 63 -115z
      m842 -1557 c36 -67 64 -126 62 -131 -3 -10 -241 -449 -246 -454 -2 -2 -88 153
-     -191 344 -103 191 -190 351 -192 356 -2 4 110 7 249 7 l253 0 65 -122z" />
-        </g>
-      </svg>
-    </div>
-  </div>
-  <div class="loaded-page" id="loaded-page">
-    <div class="nav-wrapper" id="navBar">
-      <nav>
-        <a class="nava"><img src="./assets/topicon.svg" alt="" class="nav-logo"></a>
-        <ul class="navul">
-          <li class="navli desktop-li" id="home-li"><a href="#home">Home</a></li>
-          <li class="navli desktop-li"><a href="#skills">Skills</a></li>
-          <li class="navli desktop-li"><a href="#about">About</a></li>
-          <li class="navli desktop-li"><a href="#projects">Projects</a></li>
-          <li class="navli desktop-li"><a href="#contact">Contact</a></li>
-          <li class="navli mobile-menu-li"><a class="mobile-menu-a" href="#">
-              <svg id="burgericon" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-                <g class="icon">
-                  <rect class="frstbar" x="0" y="6" width="46" height="7" rx="3" ry="3" fill="#FFFFFF" />
-                  <rect class="scndbar" x="0" y="21" width="46" height="7" rx="3" ry="3" fill="#FFFFFF" />
-                  <rect class="thrdbar" x="0" y="36" width="46" height="7" rx="3" ry="3" fill="#FFFFFF" />
-                </g>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="mobile-slide" id="slide">
-        <ul class="navul">
-          <li class="navli"><a href="#home">Home</a></li>
-          <li class="navli"><a href="#skills">Skills</a></li>
-          <li class="navli"><a href="#about">About</a></li>
-          <li class="navli"><a href="#projects">Projects</a></li>
-          <li class="navli"><a href="#contact">Contact</a></li>
-        </ul>
+     -191 344 -103 191 -190 351 -192 356 -2 4 110 7 249 7 l253 0 65 -122z"
+            />
+          </g>
+        </svg>
       </div>
     </div>
-    <section id="home" class="main">
-      <ul class="shapesul" id="shape">
-        <li class="shapesli"></li>
-        <li class="shapesli"></li>
-        <li class="shapesli"></li>
-        <li class="shapesli"></li>
-        <li class="shapesli"></li>
-        <li class="shapesli"></li>
-        <li class="shapesli"></li>
-        <li class="shapesli"></li>
-      </ul>
-      <div class="main-text">
-        <h1 class="small-htext">Hi, I'm Will,</h1>
-        <h1 class="big-htext">I'm a <span class="special-text">Full Stack</span> <br> Web Developer.</h1>
-        <h2 class="smaller-htext">I'm a responsive full-stack developer with a passion for developing modern websites.
+    <div class="loaded-page" id="loaded-page">
+      <div class="nav-wrapper" id="navBar">
+        <nav>
+          <a class="nava"
+            ><img src="./assets/topicon.svg" alt="" class="nav-logo"
+          /></a>
+          <ul class="navul">
+            <li class="navli desktop-li" id="home-li">
+              <a href="#home">Home</a>
+            </li>
+            <li class="navli desktop-li"><a href="#skills">Skills</a></li>
+            <li class="navli desktop-li"><a href="#about">About</a></li>
+            <li class="navli desktop-li"><a href="#projects">Projects</a></li>
+            <li class="navli desktop-li"><a href="#contact">Contact</a></li>
+            <li class="navli mobile-menu-li">
+              <a class="mobile-menu-a" href="#">
+                <svg
+                  id="burgericon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                >
+                  <g class="icon">
+                    <rect
+                      class="frstbar"
+                      x="0"
+                      y="6"
+                      width="46"
+                      height="7"
+                      rx="3"
+                      ry="3"
+                      fill="#FFFFFF"
+                    />
+                    <rect
+                      class="scndbar"
+                      x="0"
+                      y="21"
+                      width="46"
+                      height="7"
+                      rx="3"
+                      ry="3"
+                      fill="#FFFFFF"
+                    />
+                    <rect
+                      class="thrdbar"
+                      x="0"
+                      y="36"
+                      width="46"
+                      height="7"
+                      rx="3"
+                      ry="3"
+                      fill="#FFFFFF"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-slide" id="slide">
+          <ul class="navul">
+            <li class="navli"><a href="#home">Home</a></li>
+            <li class="navli"><a href="#skills">Skills</a></li>
+            <li class="navli"><a href="#about">About</a></li>
+            <li class="navli"><a href="#projects">Projects</a></li>
+            <li class="navli"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <section id="home" class="main">
+        <ul class="shapesul" id="shape">
+          <li class="shapesli"></li>
+          <li class="shapesli"></li>
+          <li class="shapesli"></li>
+          <li class="shapesli"></li>
+          <li class="shapesli"></li>
+          <li class="shapesli"></li>
+          <li class="shapesli"></li>
+          <li class="shapesli"></li>
+        </ul>
+        <div class="main-text">
+          <h1 class="small-htext">Hi, I'm Will,</h1>
+          <h1 class="big-htext">
+            I'm a <span class="special-text">Full Stack</span> <br />
+            Web Developer.
+          </h1>
+          <h2 class="smaller-htext">
+            I'm a responsive full-stack developer with a passion for developing
+            modern websites.
+          </h2>
+
+          <div class="hero-btns">
+            <a class="hire-me-btn" href="#contact">HIRE ME</a>
+            <a class="portfolio-btn" href="#projects">VIEW MY PORTFOLIO</a>
+          </div>
+        </div>
+        <div class="main-image">
+          <img class="will" src="./assets/will.webp" />
+          <img class="hexagon" src="./assets/hexagon.svg" alt="" />
+        </div>
+      </section>
+      <section id="skills" class="skill-section">
+        <div class="skills-wrapper">
+          <h1 class="skills-header">Skills & Technology</h1>
+          <h2 class="skills-subheader">
+            Languages, Libraries, Frameworks, & Tools
+          </h2>
+          <div class="skill-grid">
+            <div class="front-end-skills">
+              <h1 class="label skills-header">Front End</h1>
+              <div class="c1">
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/html-5-svgrepo-com.svg"
+                    alt="HTML Logo"
+                  />
+                  <p class="skill-name">HTML</p>
+                </div>
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/css-3-svgrepo-com.svg"
+                    alt="HTML Logo"
+                  />
+                  <p class="skill-name">CSS</p>
+                </div>
+              </div>
+              <div class="c2">
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/sass-svgrepo-com.svg"
+                    alt="HTML Logo"
+                  />
+                  <p class="skill-name">SASS</p>
+                </div>
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/react-svgrepo-com.svg"
+                    alt="HTML Logo"
+                  />
+                  <p class="skill-name">React.js</p>
+                </div>
+              </div>
+            </div>
+            <div class="back-end-skills">
+              <h1 class="label skills-header">Back End</h1>
+              <div class="c1">
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/nodejs-1-logo-svgrepo-com.svg"
+                    alt="HTML"
+                  />
+                  <p class="skill-name">Node.js</p>
+                </div>
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/nodejs-1-logo-svgrepo-com.svg"
+                    alt="HTML"
+                  />
+                  <p class="skill-name">Node.js</p>
+                </div>
+              </div>
+              <div class="c2">
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/express-svgrepo-com.svg"
+                    alt="HTML Logo"
+                  />
+                  <p class="skill-name">Express.js</p>
+                </div>
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/express-svgrepo-com.svg"
+                    alt="HTML Logo"
+                  />
+                  <p class="skill-name">Javascript</p>
+                </div>
+              </div>
+            </div>
+            <div class="tools">
+              <h1 class="label skills-header">Tools</h1>
+              <div class="c1">
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/photoshop-svgrepo-com.svg"
+                    alt="Adobe Photoshop Logo"
+                  />
+                  <p class="skill-name">Photoshop</p>
+                </div>
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/photoshop-svgrepo-com.svg"
+                    alt="Adobe Photoshop Logo"
+                  />
+                  <p class="skill-name">Photoshop</p>
+                </div>
+              </div>
+              <div class="c2">
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/illustrator-svgrepo-com.svg"
+                    alt="Adobe Illustrator Logo"
+                  />
+                  <p class="skill-name">Illustrator</p>
+                </div>
+                <div class="skill-card">
+                  <img
+                    class="skill-logo"
+                    src="./assets/illustrator-svgrepo-com.svg"
+                    alt="Adobe Illustrator Logo"
+                  />
+                  <p class="skill-name">Illustrator</p>
+                </div>
+              </div>
+              <p class="skill-name"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about-section"></section>
+      <section id="projects" class="projects-section">
+        <h1 class="projects-header">Projects</h1>
+        <div class="project">
+          <div class="project-info">
+            <h2>Test</h2>
+            <p>Some text about the website, using what frameworks, etc etc.</p>
+          </div>
+          <div class="project-image">
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <h2>Let's <span class="text"></span><br />together.</h2>
+        <a href="">EMAIL ME</a><a href="">Linkedin</a>
+        <h2>
+          If you were to hire me right now, where would you best utilize my
+          skillset?
         </h2>
-
-        <div class="hero-btns">
-          <a class="hire-me-btn" href="#contact">HIRE ME</a>
-          <a class="portfolio-btn" href="#projects">VIEW MY PORTFOLIO</a>
-        </div>
-      </div>
-      <div class="main-image">
-        <img class="will" src="./assets/will.webp">
-        <img class="hexagon" src="./assets/hexagon.svg" alt="">
-      </div>
-    </section>
-    <section id="skills" class="skill-section">
-      <div class="skills-wrapper">
-        <h1 class="skills-header"> Skills & Technology </h1>
-        <h2 class="skills-subheader">Languages, Libraries, Frameworks, & Tools</h2>
-        <div class="skill-grid">
-          <div class="front-end-skills">
-            <h1 class="label skills-header">Front End</h1>
-            <div class="c1">
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/html-5-svgrepo-com.svg" alt="HTML Logo">
-                <p class="skill-name">HTML</p>
-              </div>
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/css-3-svgrepo-com.svg" alt="HTML Logo">
-                <p class="skill-name">CSS</p>
-              </div>
-            </div>
-            <div class="c2">
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/sass-svgrepo-com.svg" alt="HTML Logo">
-                <p class="skill-name">SASS</p>
-              </div>
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/react-svgrepo-com.svg" alt="HTML Logo">
-                <p class="skill-name">React.js</p>
-              </div>
-            </div>
-          </div>
-          <div class="back-end-skills">
-            <h1 class="label skills-header">Back End</h1>
-            <div class="c1">
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/nodejs-1-logo-svgrepo-com.svg" alt="HTML">
-                <p class="skill-name">Node.js</p>
-              </div>
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/nodejs-1-logo-svgrepo-com.svg" alt="HTML">
-                <p class="skill-name">Node.js</p>
-              </div>
-            </div>
-            <div class="c2">
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/express-svgrepo-com.svg" alt="HTML Logo">
-                <p class="skill-name">Express.js</p>
-              </div>
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/express-svgrepo-com.svg" alt="HTML Logo">
-                <p class="skill-name">Javascript</p>
-              </div>
-            </div>
-          </div>
-          <div class="tools">
-            <h1 class="label skills-header">Tools</h1>
-            <div class="c1">
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/photoshop-svgrepo-com.svg" alt="Adobe Photoshop Logo">
-                <p class=" skill-name">Photoshop</p>
-              </div>
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/photoshop-svgrepo-com.svg" alt="Adobe Photoshop Logo">
-                <p class=" skill-name">Photoshop</p>
-              </div>
-            </div>
-            <div class="c2">
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/illustrator-svgrepo-com.svg" alt="Adobe Illustrator Logo">
-                <p class=" skill-name">Illustrator</p>
-              </div>
-              <div class="skill-card">
-                <img class="skill-logo" src="./assets/illustrator-svgrepo-com.svg" alt="Adobe Illustrator Logo">
-                <p class=" skill-name">Illustrator</p>
-              </div>
-            </div>
-            <p class="skill-name"></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about" class="about-section">
-
-    </section>
-    <section id="projects" class="projects-section">
-
-    </section>
-    <section id="contact" class="contact-section">
-      <h1>Contact Me</h1>
-      <h2>Let's <span class="text"></span><br>together.</h2>
-      <a href="">EMAIL ME</a><a href="">Linkedin</a>
-      <h2>If you were to hire me right now, where would you best utilize my skillset?</h2>
-      <form action="" method="post">
-        <input name="userName" placeholder="Your Name" type="text">
-        <input name="userEmail" type="email" placeholder="Your Email">
-        <textarea name="userMessage" id="" cols="30" rows="10" placeholder="Type your message here..."></textarea>
-      </form>
-    </section>
-    <footer>
-      <div>Developed by William Brady</div>
-      <div>2024 © William Brady</div>
-      <div>All Rights Reserved</div>
-    </footer>
-  </div>
-  <script src="script.js">
-  </script>
-</body>
-
+        <form action="" method="post">
+          <input name="userName" placeholder="Your Name" type="text" />
+          <input name="userEmail" type="email" placeholder="Your Email" />
+          <textarea
+            name="userMessage"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Type your message here..."
+          ></textarea>
+        </form>
+      </section>
+      <footer>
+        <div>Developed by William Brady</div>
+        <div>2024 © William Brady</div>
+        <div>All Rights Reserved</div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
