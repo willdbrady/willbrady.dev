@@ -109,6 +109,14 @@ nav {
   vertical-align: middle;
 }
 
+.navul a {
+  transition-duration: 0.2s;
+}
+
+.navul a.active-link {
+  color: #d45252;
+}
+
 #home-li {
   padding-left: 0px;
 }
@@ -660,7 +668,46 @@ ul#shape li:nth-child(8):after {
 
 .about-section {
   background-color: #0a0a0a;
-  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-info h1 {
+  font-size: 3.5rem;
+  margin: 0px;
+}
+
+.about-info p {
+  max-width: 500px;
+}
+
+.about-buttons {
+  display: flex;
+  align-items: center;
+}
+
+#readMore {
+  background-color: transparent;
+  border: none;
 }
 
 /* PROJECT SECTION BELOW */
@@ -669,15 +716,20 @@ ul#shape li:nth-child(8):after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cd1c1c;
-  padding: 2rem;
+  background-color: white;
+  color: black;
   margin: 2rem;
   width: 100%;
   max-width: 1280px;
   border-radius: 5rem;
 }
 
+.projects-header {
+  font-size: 3.5rem;
+}
+
 .project-info {
+  padding: 2rem;
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
@@ -686,12 +738,83 @@ ul#shape li:nth-child(8):after {
   max-width: 40%;
 }
 
+.tool-label {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.react {
+  background-color: navy;
+}
+
+.html {
+  background-color: tomato;
+}
+
+.css {
+  background-color: blue;
+}
+
+.js {
+  background-color: chocolate;
+}
+
+.blender {
+  background-color: orangered;
+}
+
 .project-image {
   background-image: url("http://via.placeholder.com/300x147");
-  margin-right: 2rem;
+  margin-right: 4rem;
   height: 147px;
   width: 300px;
 }
+
+.project-image,
+.project-image-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image-info {
+  opacity: 0;
+  transition-duration: 0.2s;
+  width: 100%;
+  height: 100%;
+  background-color: #00000079;
+  justify-content: space-around;
+}
+
+.project-image-info:hover {
+  opacity: 1;
+}
+
+.project-image-info .project-buttons-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-button {
+  border: none;
+  color: white;
+  background-color: #d45252;
+  font-family: Montserrat;
+  border-radius: 1rem;
+  font-size: 1rem;
+  line-height: 16px;
+  padding: 1rem;
+  transition-duration: 0.2s;
+}
+
+.project-button:hover {
+  cursor: pointer;
+  background-color: #a33f3f;
+}
+
 /* CONTACT SECTION BELOW */
 
 .contact-section {
@@ -699,20 +822,71 @@ ul#shape li:nth-child(8):after {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  min-height: calc(100vh - 80px);
+  font-size: 1.5rem;
 }
-
 .contact-section h1 {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3.5rem;
+}
+.contact-wrapper {
+  display: flex;
+  gap: 10 rem;
+  max-width: 1280px;
+  width: 100%;
+}
+.contact-hook {
+  width: 50%;
 }
 
-.contact-section form {
+.contact-hook h2:nth-child(1) {
+  font-size: 3.5rem;
+}
+
+.contact-hook .special-text {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 4px;
+}
+
+.contact-section .contact-wrapper form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.contact-section form input {
+.contact-section form input,
+.contact-section form textarea {
+  width: 60%;
+  border: none;
+  border-radius: 2rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-family: Montserrat;
+}
+
+.contact-section form textarea {
+  height: 8rem !important;
+  width: 60% !important;
+  resize: none;
+}
+
+.contact-section form .form-submit-button {
+  color: white;
+  background-color: #d45252;
+  font-weight: bold;
+
+  transition-duration: 0.2s;
+}
+
+,
+#submitButton:hover {
+  cursor: pointer;
+  background-color: #a33f3f;
 }
 
 /* FOOTER BELOW */

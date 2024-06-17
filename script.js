@@ -4,14 +4,14 @@ var logo = document.getElementById("loading");
 var loadingPage = document.getElementById("loading-page");
 var loadedPage = document.getElementById("loaded-page");
 
-
 function myfunction() {
   if (window.matchMedia("(max-width: 680px)").matches) {
-    logo.style = "transition: .25s; transition-timing-function: linear; width: 3rem; height: 3rem; transform: translateX(-40.1vw) translatey(-45.9vh); opacity: 0;";
+    logo.style =
+      "transition: .25s; transition-timing-function: linear; width: 3rem; height: 3rem; transform: translateX(-40.1vw) translatey(-45.9vh); opacity: 0;";
   } else {
-    logo.style = "transition: .25s; transition-timing-function: linear; width: 3rem; height: 3rem; transform: translateX(-32.1vw) translatey(-45.9vh); opacity: 0;"
+    logo.style =
+      "transition: .25s; transition-timing-function: linear; width: 3rem; height: 3rem; transform: translateX(-32.1vw) translatey(-45.9vh); opacity: 0;";
   }
-
 
   setTimeout(() => {
     loadedPage.style = "transition: .4s; opacity: 1;";
@@ -26,29 +26,28 @@ const timer = setTimeout(() => {
 
 //Mobile hamburger menu event listener and sliding animation.
 
-var slide = document.getElementById('slide');
-var burgericon = document.getElementById('burgericon');
-burgericon.addEventListener('click', function (e) {
-  this.classList.toggle('open');
-  slide.classList.toggle('open');
+var slide = document.getElementById("slide");
+var burgericon = document.getElementById("burgericon");
+burgericon.addEventListener("click", function (e) {
+  this.classList.toggle("open");
+  slide.classList.toggle("open");
 });
-slide.addEventListener('click', function () {
-  slide.classList.toggle('open');
-  burgericon.classList.toggle('open');
+slide.addEventListener("click", function () {
+  slide.classList.toggle("open");
+  burgericon.classList.toggle("open");
 });
 
 //sticky desktop blurred navbar
-var navBar = document.getElementById('navBar');
-window.addEventListener('scroll', function () {
+var navBar = document.getElementById("navBar");
+window.addEventListener("scroll", function () {
   if (window.matchMedia("(max-width: 680px)").matches) {
-
   } else {
-    navBar.style = "background-color: #0a0a0a79; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);";
+    navBar.style =
+      "background-color: #0a0a0a79; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);";
   }
-
 });
 
-window.addEventListener('load', function () {
+window.addEventListener("load", function () {
   window.scrollTo(0, 0);
 });
 
@@ -56,77 +55,138 @@ window.addEventListener('load', function () {
 
 class TextScramble {
   constructor(el) {
-    this.el = el
-    this.chars = '!<>-_\\/[]{}—=+*^?#________'
-    this.update = this.update.bind(this)
+    this.el = el;
+    this.chars = "!<>-_\\/[]{}—=+*^?#________";
+    this.update = this.update.bind(this);
   }
   setText(newText) {
-    const oldText = this.el.innerText
-    const length = Math.max(oldText.length, newText.length)
-    const promise = new Promise((resolve) => this.resolve = resolve)
-    this.queue = []
+    const oldText = this.el.innerText;
+    const length = Math.max(oldText.length, newText.length);
+    const promise = new Promise((resolve) => (this.resolve = resolve));
+    this.queue = [];
     for (let i = 0; i < length; i++) {
-      const from = oldText[i] || ''
-      const to = newText[i] || ''
-      const start = Math.floor(Math.random() * 40)
-      const end = start + Math.floor(Math.random() * 40)
-      this.queue.push({ from, to, start, end })
+      const from = oldText[i] || "";
+      const to = newText[i] || "";
+      const start = Math.floor(Math.random() * 40);
+      const end = start + Math.floor(Math.random() * 40);
+      this.queue.push({ from, to, start, end });
     }
-    cancelAnimationFrame(this.frameRequest)
-    this.frame = 0
-    this.update()
-    return promise
+    cancelAnimationFrame(this.frameRequest);
+    this.frame = 0;
+    this.update();
+    return promise;
   }
   update() {
-    let output = ''
-    let complete = 0
+    let output = "";
+    let complete = 0;
     for (let i = 0, n = this.queue.length; i < n; i++) {
-      let { from, to, start, end, char } = this.queue[i]
+      let { from, to, start, end, char } = this.queue[i];
       if (this.frame >= end) {
-        complete++
-        output += to
+        complete++;
+        output += to;
       } else if (this.frame >= start) {
         if (!char || Math.random() < 0.28) {
-          char = this.randomChar()
-          this.queue[i].char = char
+          char = this.randomChar();
+          this.queue[i].char = char;
         }
-        output += `<span class="dud">${char}</span>`
+        output += `<span class="dud">${char}</span>`;
       } else {
-        output += from
+        output += from;
       }
     }
-    this.el.innerHTML = output
+    this.el.innerHTML = output;
     if (complete === this.queue.length) {
-      this.resolve()
+      this.resolve();
     } else {
-      this.frameRequest = requestAnimationFrame(this.update)
-      this.frame++
+      this.frameRequest = requestAnimationFrame(this.update);
+      this.frame++;
     }
   }
   randomChar() {
-    return this.chars[Math.floor(Math.random() * this.chars.length)]
+    return this.chars[Math.floor(Math.random() * this.chars.length)];
   }
 }
 
 const phrases = [
-  'create',
-  'inspire',
-  'innovate',
-  'build',
-  'develop',
-  'revolutionize',
-  'collaborate'
-]
+  "create",
+  "inspire",
+  "innovate",
+  "build",
+  "develop",
+  "revolutionize",
+  "collaborate",
+];
 
-const el = document.querySelector('.text')
-const fx = new TextScramble(el)
+const el = document.querySelector(".text");
+const fx = new TextScramble(el);
 
-let counter = 0
+let counter = 0;
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 4000)
-  })
-  counter = (counter + 1) % phrases.length
-}
+    setTimeout(next, 4000);
+  });
+  counter = (counter + 1) % phrases.length;
+};
 
-next()
+next();
+
+//
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navBar");
+  const links = navbar.querySelectorAll('a[href^="#"]');
+  const sections = document.querySelectorAll("section");
+  const navbarHeight = navbar.offsetHeight;
+
+  // Smooth scrolling to sections
+  links.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+      const targetPosition = targetSection.offsetTop - navbarHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    });
+  });
+
+  const heroButtons = document.querySelectorAll(".herobtn");
+  heroButtons.forEach((heroButton) => {
+    heroButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+      const targetPosition = targetSection.offsetTop - navbarHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    });
+  });
+  // Highlighting the active link
+  window.addEventListener("scroll", function () {
+    let currentSection = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - navbarHeight;
+      const sectionHeight = section.clientHeight;
+
+      if (
+        pageYOffset >= sectionTop &&
+        pageYOffset < sectionTop + sectionHeight
+      ) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    links.forEach((link) => {
+      link.classList.remove("active-link");
+      if (link.getAttribute("href").substring(1) === currentSection) {
+        link.classList.add("active-link");
+      }
+    });
+  });
+});

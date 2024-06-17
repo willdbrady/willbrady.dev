@@ -63,12 +63,20 @@
           /></a>
           <ul class="navul">
             <li class="navli desktop-li" id="home-li">
-              <a href="#home">Home</a>
+              <a id="nav-home" href="#home">Home</a>
             </li>
-            <li class="navli desktop-li"><a href="#skills">Skills</a></li>
-            <li class="navli desktop-li"><a href="#about">About</a></li>
-            <li class="navli desktop-li"><a href="#projects">Projects</a></li>
-            <li class="navli desktop-li"><a href="#contact">Contact</a></li>
+            <li class="navli desktop-li">
+              <a id="nav-skills" href="#skills">Skills</a>
+            </li>
+            <li class="navli desktop-li">
+              <a id="nav-about" href="#about">About</a>
+            </li>
+            <li class="navli desktop-li">
+              <a id="nav-projects" href="#projects">Projects</a>
+            </li>
+            <li class="navli desktop-li">
+              <a id="nav-contact" href="#contact">Contact</a>
+            </li>
             <li class="navli mobile-menu-li">
               <a class="mobile-menu-a" href="#">
                 <svg
@@ -147,8 +155,10 @@
           </h2>
 
           <div class="hero-btns">
-            <a class="hire-me-btn" href="#contact">HIRE ME</a>
-            <a class="portfolio-btn" href="#projects">VIEW MY PORTFOLIO</a>
+            <a class="hire-me-btn herobtn" href="#contact">HIRE ME</a>
+            <a class="portfolio-btn herobtn" href="#projects"
+              >VIEW MY PORTFOLIO</a
+            >
           </div>
         </div>
         <div class="main-image">
@@ -284,38 +294,123 @@
           </div>
         </div>
       </section>
-      <section id="about" class="about-section"></section>
+      <section id="about" class="about-section">
+        <div class="about-wrapper">
+          <div class="about-info">
+            <h1>About Me</h1>
+            <p>
+              I'm Will, an avid front-end developer who enjoys taking on new
+              challenges and is always looking for ways to improve. I value
+              critical thinking, punctuality and attention to detail. The
+              journey from never writing a line of code to self-learning enough
+              to be an employed web developer has been a crazy one, and i'm
+              still planning on learning more!
+            </p>
+            <div class="about-buttons">
+              <a href="" class="hire-me-btn" id="resume">View Resume</a>
+              <button class="portfolio-btn" id="readMore">Read More</button>
+            </div>
+          </div>
+          <div class="about-img-wrapper">
+            <img src="http://via.placeholder.com/300x300" alt="" />
+          </div>
+        </div>
+      </section>
       <section id="projects" class="projects-section">
         <h1 class="projects-header">Projects</h1>
         <div class="project">
           <div class="project-info">
-            <h2>Test</h2>
-            <p>Some text about the website, using what frameworks, etc etc.</p>
+            <h2>AMCA Website</h2>
+            <p>
+              This is the website I made for the Asociación de Música Country
+              Argentina. Hover over the image and click "More Info" to read more
+              about it.
+            </p>
+            <div class="project-tools">
+              <p>
+                <span class="react tool-label">React</span
+                ><span class="html tool-label">HTML</span
+                ><span class="css tool-label">CSS</span
+                ><span class="js tool-label">Javascript</span
+                ><span class="blender tool-label">Blender</span>
+              </p>
+            </div>
           </div>
           <div class="project-image">
-            <div></div>
+            <div class="project-image-info">
+              AMCA Website
+              <div class="project-buttons-wrapper">
+                <a href="https://amca.org.ar/" class="project-button"
+                  >View Site</a
+                ><button class="project-button">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-info">
+            <h2>AMCA Website</h2>
+            <p>
+              This is the website I made for the Asociación de Música Country
+              Argentina. Hover over the image and click "More Info" to read more
+              about it.
+            </p>
+            <div class="project-tools">
+              <p>
+                <span class="react tool-label">React</span
+                ><span class="html tool-label">HTML</span
+                ><span class="css tool-label">CSS</span
+                ><span class="js tool-label">Javascript</span
+                ><span class="blender tool-label">Blender</span>
+              </p>
+            </div>
+          </div>
+          <div class="project-image">
+            <div class="project-image-info">
+              AMCA Website
+              <div class="project-buttons-wrapper">
+                <a href="https://amca.org.ar/" class="project-button"
+                  >View Site</a
+                ><button class="project-button">More Info</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section id="contact" class="contact-section">
         <h1>Contact Me</h1>
-        <h2>Let's <span class="text"></span><br />together.</h2>
-        <a href="">EMAIL ME</a><a href="">Linkedin</a>
-        <h2>
-          If you were to hire me right now, where would you best utilize my
-          skillset?
-        </h2>
-        <form action="" method="post">
-          <input name="userName" placeholder="Your Name" type="text" />
-          <input name="userEmail" type="email" placeholder="Your Email" />
-          <textarea
-            name="userMessage"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Type your message here..."
-          ></textarea>
-        </form>
+        <div class="contact-wrapper">
+          <div class="contact-hook">
+            <h2>Let's <span class="text"></span><br />together.</h2>
+
+            <h2>
+              If you were to
+              <span class="special-text">hire me right now </span>,
+              <br />
+              where would you best utilize my skillset?
+            </h2>
+            <a href="">EMAIL ME</a><a href="">Linkedin</a>
+          </div>
+          <form action="" method="post">
+            <input name="userName" placeholder="Your Name" type="text" />
+            <input name="userEmail" type="email" placeholder="Your Email" />
+            <textarea
+              name="userMessage"
+              type="text"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Type your message here..."
+            ></textarea>
+            <input
+              class="form-submit-button"
+              type="submit"
+              placeholder="Submit"
+              name="submit"
+              id="submitButton"
+            />
+          </form>
+        </div>
       </section>
       <footer>
         <div>Developed by William Brady</div>
