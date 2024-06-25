@@ -58,7 +58,7 @@
     <div class="loaded-page" id="loaded-page">
       <div class="nav-wrapper" id="navBar">
         <nav>
-          <a class="nava"
+          <a href="#home" class="nava"
             ><img src="./assets/topicon.svg" alt="" class="nav-logo"
           /></a>
           <ul class="navul">
@@ -155,8 +155,10 @@
           </h2>
 
           <div class="hero-btns">
-            <a class="hire-me-btn herobtn" href="#contact">HIRE ME</a>
-            <a class="portfolio-btn herobtn" href="#projects"
+            <a class="hire-me-btn herobtn" id="hireMeBtn" href="#contact"
+              >HIRE ME</a
+            >
+            <a class="portfolio-btn herobtn" id="portfolioBtn" href="#projects"
               >VIEW MY PORTFOLIO</a
             >
           </div>
@@ -302,17 +304,22 @@
               I'm Will, an avid front-end developer who enjoys taking on new
               challenges and is always looking for ways to improve. I value
               critical thinking, punctuality and attention to detail. The
-              journey from never writing a line of code to self-learning enough
-              to be an employed web developer has been a crazy one, and i'm
-              still planning on learning more!
+              journey from fiddling with lines of code when I was a teenager to
+              writing entire applications has been a crazy one, and I'm still
+              planning on learning more!
             </p>
             <div class="about-buttons">
               <a href="" class="hire-me-btn" id="resume">View Resume</a>
-              <button class="portfolio-btn" id="readMore">Read More</button>
+              <a
+                href="about.html"
+                class="portfolio-btn open-button-about"
+                id="readMore"
+                >Read More About Me
+              </a>
             </div>
           </div>
           <div class="about-img-wrapper">
-            <img src="http://via.placeholder.com/300x300" alt="" />
+            <img src="./assets/Will 300px.webp" alt="" />
           </div>
         </div>
       </section>
@@ -342,7 +349,9 @@
               <div class="project-buttons-wrapper">
                 <a href="https://amca.org.ar/" class="project-button"
                   >View Site</a
-                ><button class="project-button">More Info</button>
+                ><a href="./amca.html" class="project-button open-button-amca">
+                  More Info
+                </a>
               </div>
             </div>
           </div>
@@ -382,16 +391,25 @@
         <div class="contact-wrapper">
           <div class="contact-hook">
             <h2>Let's <span class="text"></span><br />together.</h2>
-
             <h2>
-              If you were to
-              <span class="special-text">hire me right now </span>,
+              If you were to <br />
+              <span class="special-text">hire me right now</span>,
               <br />
-              where would you best utilize my skillset?
+              where would you best <br />
+              utilize my skillset?
             </h2>
-            <a href="">EMAIL ME</a><a href="">Linkedin</a>
+            <div class="contact-links">
+              <a href="mailto:willdbrady@yahoo.com"
+                ><img src="./assets/mail.svg" alt="" /></a
+              ><a target="_blank" href="https://github.com/willdbrady"
+                ><img src="./assets/github.svg" alt="" /></a
+              ><a href="#"><img src="./assets/linkedin.svg" alt="" /></a>
+            </div>
           </div>
-          <form action="" method="post">
+          <form
+            action="https://formsubmit.co/81449651c09e715557f81f25a5ecd534"
+            method="POST"
+          >
             <input name="userName" placeholder="Your Name" type="text" />
             <input name="userEmail" type="email" placeholder="Your Email" />
             <textarea
