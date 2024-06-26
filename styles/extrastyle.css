@@ -109,6 +109,13 @@ a {
   width: 100%;
 }
 
+h2 {
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+}
+
 p {
   color: white;
   max-width: 600px;
