@@ -858,7 +858,7 @@ ul#shape li:nth-child(8):after {
 .contact-hook .special-text {
   text-decoration: underline;
   text-decoration-color: white;
-  text-underline-offset: 4px;
+  text-underline-offset: 7px;
 }
 
 .contact-links {
@@ -877,6 +877,7 @@ ul#shape li:nth-child(8):after {
   width: 80px;
   padding: 10px;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  margin-bottom: 2rem;
 }
 
 .contact-links a:hover {
@@ -974,6 +975,19 @@ footer div:nth-child(2) {
   }
 }
 
+@media screen and (max-width: 1248px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-wrapper div,
+  #wbForm {
+    border-left: none;
+    border-right: none;
+  }
+}
+
 @media screen and (max-width: 1216px) {
   #hireMeBtn {
     box-sizing: border-box;
@@ -994,6 +1008,22 @@ footer div:nth-child(2) {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .contact-hook,
+  #wbForm {
+    width: 100%;
+  }
+
+  #wbForm input,
+  #wbForm textarea {
+    margin-bottom: 2rem;
+  }
+
+  #wbForm .form-submit-button {
+    margin-bottom: 4rem;
+  }
+}
+
 @media screen and (max-width: 1164px) {
   .small-htext {
     font-size: 2rem;
@@ -1006,6 +1036,9 @@ footer div:nth-child(2) {
   .smaller-htext {
     font-size: 1.5rem;
   }
+}
+
+@media screen and (max-width: 978px) {
 }
 
 @media screen and (max-width: 950px) {
@@ -1041,6 +1074,7 @@ footer div:nth-child(2) {
 
   .project-info {
     margin-left: 0px;
+    max-width: 75%;
   }
 
   .project-image {
@@ -1113,6 +1147,18 @@ footer div:nth-child(2) {
   .hero-image {
     width: 300px;
   }
+
+  .about-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .about-img-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .about-buttons {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (min-width: 814px) {
@@ -1124,6 +1170,12 @@ footer div:nth-child(2) {
 
   .desktop-li {
     display: inline;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .contact-hook h2:nth-child(1) {
+    font-size: 1.5em;
   }
 }
 
@@ -1159,9 +1211,49 @@ footer div:nth-child(2) {
   }
 }
 
+@media screen and (max-width: 652px) {
+  .big-htext {
+    font-size: 2rem;
+  }
+  .smaller-htext {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 518px) {
   .about-img-wrapper img {
     max-width: 346px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  #hireMeBtn,
+  #portfolioBtn {
+    font-size: 1rem;
+  }
+
+  #hireMeBtn {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .hero-image {
+    width: 200px;
+  }
+
+  .main-image {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  #readMore {
+    font-size: 1.25rem;
+  }
+
+  .project-image {
+    margin-bottom: 4.25rem;
   }
 }

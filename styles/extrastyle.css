@@ -59,7 +59,7 @@ a {
 
 .about-header-images {
   max-width: 1280px;
-  width: 100%;
+  width: calc(100% - 60px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,6 +95,10 @@ a {
     calc(0.02 * var(--mouse-y))
   );
   width: 40%;
+}
+
+.about-hero-mobile {
+  display: none;
 }
 
 .special-text {
@@ -140,6 +144,33 @@ footer div {
 footer div:nth-child(1),
 footer div:nth-child(2) {
   border-right: solid white 1px;
+}
+
+@media screen and (max-width: 1348px) {
+  .back-button {
+    transform: none;
+    position: absolute;
+    top: 60px;
+    right: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-header-images {
+    display: none;
+  }
+  .about-hero-mobile {
+    display: block;
+    max-width: 1000px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .back-button {
+    top: 30px;
+    right: 30px;
+  }
 }
 
 @media screen and (max-width: 518px) {
