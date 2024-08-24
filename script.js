@@ -174,10 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const sectionTop = section.offsetTop - navbarHeight;
       const sectionHeight = section.clientHeight;
 
-      if (
-        pageYOffset >= sectionTop &&
-        pageYOffset < sectionTop + sectionHeight
-      ) {
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
         currentSection = section.getAttribute("id");
       }
     });
