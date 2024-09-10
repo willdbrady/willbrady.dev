@@ -956,7 +956,6 @@ footer div:nth-child(2) {
     width: auto;
   }
 
-  .main-image,
   .hero-image {
     width: 540px;
   }
@@ -1038,7 +1037,16 @@ footer div:nth-child(2) {
   }
 }
 
-@media screen and (max-width: 978px) {
+@media screen and (max-width: 1059px) {
+  .hero-image {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .hero-image {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -1067,7 +1075,17 @@ footer div:nth-child(2) {
   }
 }
 
+@media screen and (max-width: 879px) {
+  .hero-image {
+    width: 370px;
+  }
+}
+
 @media screen and (max-width: 850px) {
+  .hero-image {
+    width: 335px;
+  }
+
   .project {
     flex-direction: column;
   }
@@ -1113,7 +1131,12 @@ footer div:nth-child(2) {
   .main {
     flex-direction: column-reverse;
     gap: 0px;
-    justify-content: end;
+    justify-content: start;
+  }
+
+  .hero-image {
+    margin-top: 6rem;
+    width: 300px;
   }
 
   .small-htext {
@@ -1141,11 +1164,6 @@ footer div:nth-child(2) {
 
   nav {
     margin-bottom: 0px;
-  }
-
-  .main-image,
-  .hero-image {
-    width: 300px;
   }
 
   .about-wrapper {
@@ -1242,10 +1260,6 @@ footer div:nth-child(2) {
   .hero-image {
     width: 200px;
   }
-
-  .main-image {
-    width: 200px;
-  }
 }
 
 @media screen and (max-width: 344px) {
@@ -1255,5 +1269,29 @@ footer div:nth-child(2) {
 
   .project-image {
     margin-bottom: 4.25rem;
+  }
+}
+
+@media screen and (max-width: 812px) and (max-height: 827px) {
+  .main {
+    height: 827px;
+  }
+}
+
+@media screen and (max-width: 652px) and (max-height: 828px) {
+  .main {
+    height: 828px;
+  }
+}
+
+@media screen and (max-width: 436px) and (max-height: 685px) {
+  .main {
+    height: 685px;
+  }
+}
+
+@media screen and (max-width: 404px) and (max-height: 599px) {
+  .main {
+    height: 599px;
   }
 }
